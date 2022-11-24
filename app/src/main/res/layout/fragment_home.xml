@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.HomeFragment"
+    android:background="@color/bg"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="418dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.275" />
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="%username%"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.244" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="สวัสดี คุณ"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView124"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="เพิ่มการนัดหมายตอนนี้เลย !"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/addOrderBtn"
+            android:layout_width="200dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="180dp"
+            android:backgroundTint="#0E5E6F"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+
+            android:text="เพิ่มการ\nนัดหมาย"
+            android:textAlignment="textStart"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/editProfile"
+            android:layout_width="170dp"
+            android:layout_height="119dp"
+            android:layout_marginBottom="180dp"
+            android:backgroundTint="#3E6D9C"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:text="แก้ไข\nข้อมูลส่วนตัว"
+            android:textAlignment="textStart"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addOrderBtn" />
+
+        <Button
+            android:id="@+id/myADSBtn"
+            android:layout_width="170dp"
+            android:layout_height="119dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#A4BE7B"
+            android:drawableLeft="@drawable/ic_baseline_my_location_24"
+            android:text="ที่อยู่ของฉัน"
+            android:textAlignment="textStart"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toEndOf="@+id/addAddressBtn" />
+
+        <Button
+            android:id="@+id/addAddressBtn"
+            android:layout_width="200dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#4FA095"
+            android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+            android:text="เพิ่ม\nที่อยู่ใหม่"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="264dp"
+            android:layout_height="297dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/landin_img"
+            app:layout_constraintBottom_toTopOf="@+id/editProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

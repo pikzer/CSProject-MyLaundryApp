@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".screen.EditProfileActivity">
+
+    <EditText
+        android:id="@+id/nameEditField"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/emailEditField"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditField" />
+
+    <EditText
+        android:id="@+id/phoneEditField"
+        android:layout_width="291dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditField" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="ชื่อ"
+        app:layout_constraintEnd_toStartOf="@+id/nameEditField"
+        app:layout_constraintTop_toTopOf="@+id/nameEditField" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="อีเมล"
+        app:layout_constraintEnd_toStartOf="@+id/emailEditField"
+        app:layout_constraintTop_toTopOf="@+id/emailEditField" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="เบอร์โทร"
+        app:layout_constraintEnd_toStartOf="@+id/phoneEditField"
+        app:layout_constraintTop_toTopOf="@+id/phoneEditField" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="แก้ไขข้อมูลส่วนตัว"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="167dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_icon" />
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="308dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="84dp"
+        android:text="แก้ไขข้อมูล"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEditField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

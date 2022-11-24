@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".screen.AddOrderActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="นัดหมายรายการ"
+
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <th.ac.ku.CustomSpinner
+        android:id="@+id/serviceSpinner"
+        android:layout_width="353dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="172dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เลือกบริการ"
+        app:layout_constraintBottom_toTopOf="@+id/serviceSpinner"
+        app:layout_constraintStart_toStartOf="@+id/serviceSpinner" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+
+        android:text="รูปแบบบริการ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/addressSpinner"
+        android:layout_width="353dp"
+        android:layout_height="61dp"
+        android:background="@color/white"
+
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/periodSpinner" />
+
+    <Spinner
+        android:id="@+id/payMethodSpinner"
+        android:layout_width="353dp"
+        android:layout_height="61dp"
+        android:background="@color/white"
+
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/periodSpinner" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เลือกที่อยู่"
+        app:layout_constraintBottom_toTopOf="@+id/addressSpinner"
+        app:layout_constraintStart_toStartOf="@+id/addressSpinner" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รูปแบบการชำระ"
+        app:layout_constraintBottom_toTopOf="@+id/payMethodSpinner"
+        app:layout_constraintStart_toStartOf="@+id/payMethodSpinner" />
+
+    <EditText
+        android:id="@+id/datePickField"
+        android:layout_width="260dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="80dp"
+        android:drawableRight="@drawable/ic_baseline_edit_calendar_24"
+        android:editable="false"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceSpinner" />
+
+    <TextView
+        android:id="@+id/textView218"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="รายละเอียดการรับผ้า"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceSpinner" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="วันที่รับผ้า"
+        app:layout_constraintBottom_toTopOf="@+id/datePickField"
+        app:layout_constraintStart_toStartOf="@+id/datePickField" />
+
+    <Spinner
+        android:id="@+id/periodSpinner"
+        android:layout_width="353dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickField" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="ช่วงเวลา"
+        app:layout_constraintBottom_toTopOf="@+id/periodSpinner"
+        app:layout_constraintStart_toStartOf="@+id/periodSpinner" />
+
+    <Button
+        android:id="@+id/makeOrderBtn"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="12dp"
+        android:text="ทำรายการ"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payMethodSpinner" />
+
+    <ProgressBar
+        android:id="@+id/progressbarorder"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="104dp"
+        android:visibility="invisible"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
